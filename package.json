@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/olalonde/handlebars-paginate.git"
+    "url": "git://github.com/jnoelEFL/handlebars-paginate.git"
   },
   "keywords": [
     "handlebars",
     "pagination",
     "paginate"
   ],
-  "author": "Olivier Lalonde <olalonde@gmail.com>",
+  "author": "Julien Noel <jnoel28@free.fr>",
   "license": "BSD"
 }

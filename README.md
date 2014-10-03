@@ -30,6 +30,9 @@ template.hbs
 ```html
 <div class="pagination pagination-centered">
   <ul>
+    {{#paginate pagination type="first"}}
+      <li {{#if disabled}}class="disabled"{{/if}}><a href="?p={{n}}">First</a></li>
+    {{/paginate}}
     {{#paginate pagination type="previous"}}
       <li {{#if disabled}}class="disabled"{{/if}}><a href="?p={{n}}" >Prev</a></li>
     {{/paginate}}
@@ -38,6 +41,9 @@ template.hbs
     {{/paginate}}
     {{#paginate pagination type="next"}}
       <li {{#if disabled}}class="disabled"{{/if}}><a href="?p={{n}}">Next</a></li>
+    {{/paginate}}
+    {{#paginate pagination type="last"}}
+      <li {{#if disabled}}class="disabled"{{/if}}><a href="?p={{n}}">Last</a></li>
     {{/paginate}}
   </ul>
 </div>
